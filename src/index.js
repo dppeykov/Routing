@@ -35,12 +35,16 @@ const routing = (
 
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/users" component={Users} />
+        <Route path="/users" component={Users} />
         {
           // The URL parameters allow rendering the same component but based on it's id
           // Example: Users -> id 1,2,3
         }
-        <Route path="/users/:id" component={Users} />
+        {/* 
+        The following has been moved to the Users component in order to implement nested routing
+        // <Route path="/users/:id" component={Users} /> 
+        */}
+
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
