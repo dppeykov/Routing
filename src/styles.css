@@ -1,4 +1,10 @@
 body {
+  margin: 0;
+  padding: 2rem;
   background-color: azure;
   font-family: "Courier New", Courier, monospace;
+}
+
+.active {
+  color: red;
 }
